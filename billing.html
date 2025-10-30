@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Telephone Call Billing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>💰 Telephone Call Billing</h1>
+    </header>
+
+    <form id="billingForm" class="form-box">
+      <input type="text" id="billName" placeholder="Customer Name" required />
+      <input type="tel" id="billPhone" placeholder="Phone Number" required />
+      <input type="number" id="callRate" placeholder="Call Rate (₹/min)" required />
+      <input type="number" id="callTime" placeholder="Call Duration (minutes)" required />
+
+      <label class="checkbox">
+        <input type="checkbox" id="isInternational" />
+        International Call (50% extra charge)
+      </label>
+
+      <button type="submit">Generate Bill</button>
+    </form>
+
+    <h3>Generated Bill:</h3>
+    <div id="generatedBill" class="bill-box"></div>
+    <button class="print-btn" onclick="printBill()">🖨️ Print Bill</button>
+
+    <div class="nav-buttons">
+      <button onclick="location.href='directory.html'">Go to Directory</button>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

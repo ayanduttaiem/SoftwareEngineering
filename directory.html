@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Telephone Directory</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📇 Telephone Directory</h1>
+    </header>
+
+    <form id="addContactForm" class="form-box">
+      <input type="text" id="contactName" placeholder="Contact Name" required />
+      <input type="tel" id="contactPhone" placeholder="Phone Number" required />
+      <button type="submit">Add Contact</button>
+    </form>
+
+    <div class="search-section">
+      <input type="text" id="searchContact" placeholder="Search Contact" />
+      <button id="searchButton">Search</button>
+    </div>
+
+    <ul id="contactList"></ul>
+
+    <div class="nav-buttons">
+      <button onclick="location.href='billing.html'">Go to Billing System</button>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
